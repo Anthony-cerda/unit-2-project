@@ -28,7 +28,7 @@
   font-weight: 300;
   text-align: center;
   padding: .35em;
-  border: 1px dotted #999;
+  border-bottom: 1px dotted #999;
 } 
 
 body {
