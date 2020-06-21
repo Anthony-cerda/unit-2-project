@@ -5,6 +5,32 @@
 }
 
 
+
+.header, .nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0 1em 0;
+}
+
+.header-img {
+  align-self: center;
+}
+
+.project-img {
+  display: flexbox;
+  flex-direction: row;
+  width: 75%;
+}
+
+.nav a {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 300;
+  text-align: center;
+  padding: .35em;
+  border: 1px dotted #999;
+} 
+
 body {
     margin: 0;
     padding: 0;
@@ -14,10 +40,20 @@ body {
     background: #0d1d29;
 }
 
+h1 {
+  font-family: cursive;
+  font-size: em;
+  padding-bottom: 15px;
+  letter-spacing: .5px;
+  text-transform: capitalize;
+}
 
-  h1,
+  h2,
   h3 {
     font-family: cursive;
+    letter-spacing: .5px;
+    font-size: 2em;
+    text-transform: capitalize;
   }
   
 
@@ -25,17 +61,13 @@ body {
     font-family: fantasy;
   }
 
+
   p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 20px 10px 0 10px;
+    padding-bottom: 20px;
+    padding-top: 5px;
   }
 
-  .ext {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    opacity: .5;
-    padding-bottom: 25px;
-  }
 
 footer {
   width: 100%;
@@ -76,6 +108,7 @@ a.social {
 
 a:hover {
     color: #3f78ce;
+    cursor: pointer;
   }
   
 a.twitter {
