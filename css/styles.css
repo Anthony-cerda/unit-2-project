@@ -1,10 +1,15 @@
+/* Base Style for Mobile First */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
+.main-header {
+    font-size: 2em;
+}
 
 .header, .nav {
   display: flex;
@@ -28,7 +33,7 @@
   font-weight: 300;
   text-align: center;
   padding: .35em;
-  border-bottom: 1px dotted #999;
+  border-bottom: 1px dotted goldenrod;
 } 
 
 body {
@@ -68,17 +73,22 @@ h1 {
     padding-top: 5px;
   }
 
+  section[class^="container"] {
+      border: solid 1px lightgray;
+      border-radius: 5%;
+      box-shadow: inset 2px 0px 4px 2px goldenrod;
+
+  }
+
+  .container-1 {
+    margin-bottom: 1.5em;
+  }
+
 
 footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
-}
-
-footer .copyright {
-  top: -8px;
-  font-size: .75em;
-  color: #999;
 }
 
 footer ul {
@@ -91,19 +101,12 @@ footer ul li {
   display: inline-block;
 }
 
-a {
- color: #999;
+.footer-nav {
+    display: none;
 }
 
-a.social {
-  display: inline-block;
-  text-indent: -9999px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
-  opacity: 1;
-  transition: all .5s;
+a {
+ color: #999;
 }
 
 a:hover {
@@ -111,15 +114,94 @@ a:hover {
     cursor: pointer;
   }
   
-a.twitter {
-  background-image: url(../images/twitter.svg);
+  .footer-name,
+  .b-top {
+      display: inline-flex;
+      margin-top: 20px;
 }
-a.linkedin {
-  background-image: url(../images/linkedin.svg);
-}
-a.github {
-  background-image: url(../images/github.svg);
-}
-a.social:hover {
-  opacity: .5;
+
+  .footer-name {
+      padding-right: 35%;
+      font-size: 1.3rem;
+      margin-top: 5px;
+  }
+
+  h4:nth-child(-n+1) {
+      color: hotpink;
+  }
+
+  
+  
+
+  /* Styles for Viewports Min Width 768px */
+
+@media (min-width: 768px) {
+    .nav {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .header-img {
+        float: right;
+        width: 45%;
+        padding: 20px;
+    }
+
+    .intro {
+        letter-spacing: 1.2px;
+        font-size: 20px;
+        padding-bottom: 20%;
+        margin-top: 20px;
+        padding-left: 5%;
+        text-shadow: .5px .5px goldenrod;
+        
+    }
+
+    .market,
+    .travel,
+    .photo {
+        float: right;
+        width: 50%;
+        overflow: hidden;
+        padding: 2%;
+    }
+
+    .search,
+    .map,
+    .calc {
+        float: left;
+        width: 50%;
+        overflow: hidden;
+        padding: 2%;
+    }
+
+    .container-1 {
+        margin-top: 125%;
+    }
+
+    .footer-name,
+    .footer-nav {
+        display: inline; 
+    }
+
+    .footer-name {
+        padding: 5%;
+        float: left;
+        width:45%;
+    }
+
+    .footer-nav {
+        display: inline;
+        padding: 5%;
+        float: right;
+        width: 45%;
+        justify-content: space-between;
+    }
+
+    .b-top {
+        display: none;
+    }
 }
