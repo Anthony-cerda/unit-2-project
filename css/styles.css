@@ -1,4 +1,4 @@
-/* Base Style for Mobile First */
+/*---------------- Base Style 320px ---------------*/
 
 
 * {
@@ -141,9 +141,47 @@ a:hover {
       display: none;
   }
   
-  
+
+
+
+  /*------------------ Media Query 768px -------------------*/
+
+  @media (min-width: 768px) {
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*------------------ Clearfix -------------------*/
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
+
+
+
+
