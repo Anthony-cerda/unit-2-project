@@ -21,12 +21,14 @@
 .header-img {
   align-self: center;
   width: 100%;
+  padding: 1em;
 }
 
 .project-img {
   display: flex;
   flex-direction: row;
-  width: 75%;
+  width: 100%;
+  padding: 1em;
 }
 
 .nav a {
@@ -142,7 +144,7 @@ a:hover {
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .header-img {
@@ -180,7 +182,7 @@ a:hover {
     }
 
     .container-1 {
-        margin-top: 130%;
+        margin-top: 4em;
     }
 
     .footer-name,
